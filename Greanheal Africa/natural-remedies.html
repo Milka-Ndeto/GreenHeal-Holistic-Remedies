@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreanHeal Africa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="GreanHeal Africa">
+            <img src="Modern Hospital Center Logo.png" alt="GreanHeal Africa" class="logo">
+            <h1>GreanHeal Africa</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="natural-remedies.html">Natural Remedies</a></li>
+            <li><a href="first-aid.html">First Aid</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+    </nav>
+
+    <!-- Main Content Area with Sidebar -->
+    <div class="container">
+        <!-- Main Content -->
+        <section class="main-content">
+            <article>
+                <h2>Welcome to GreanHeal Africa</h2>
+                <p>Your Natural Treatment Hub for Healing and Wellness.</p>
+                
+                <!-- Natural Treatments Section -->
+                <section class="natural-treatments">
+                    <h3>Natural Treatments</h3>
+                    <p>Explore a variety of natural remedies that can help you achieve optimal health and well-being.</p>
+
+            
+                        <!-- Image Gallery -->
+                        <div class="Health Resources">
+                            <h4>Gallery of Natural Remedies</h4>
+                            <img src="Images/natural remedies.jpeg" alt="Herbal Remedy 1" class="gallery-image">
+                            <img src="Images/natural remedies.jpeg" alt="Herbal Remedy 2" class="gallery-image">
+                            <img src="Images/natural remedies.jpeg" alt="Herbal Remedy 3" class="gallery-image">
+                        </div>
+
+                        <!-- Video Section -->
+                        <div class="video-gallery">
+                            <h4>Video Tutorials</h4>
+                            <!-- YouTube Channel Links -->
+                            <p>Check out our YouTube channel for more videos on natural remedies:</p>
+                            <ul>
+                                <li><a href="https://www.youtube.com/channel/example1" target="_blank">Natural Healing with Herbs</a></li>
+                                <li><a href="https://www.youtube.com/channel/example2" target="_blank">Holistic Wellness Tips</a></li>
+                                <li><a href="https://www.youtube.com/channel/example3" target="_blank">Ayurveda and Natural Health</a></li>
+                            </ul>
+                            
+                            <!-- Local Video (Example) -->
+                            <video width="560" height="315" controls>
+                                <source src="video/natural_remedy_intro.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </section>
+
+                </section>
+            </article>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Search Bar with Options for Common Sicknesses and Text Input -->
+            <div class="search-bar">
+                <label for="search">Search for remedies:</label>
+                <select id="search" name="search">
+                    <option value="headache">Headache</option>
+                    <option value="cold">Cold</option>
+                    <option value="stress">Stress</option>
+                    <option value="insomnia">Insomnia</option>
+                    <option value="stomach-ache">Stomach Ache</option>
+                    <option value="joint-pain">Joint Pain</option>
+                    <option value="fatigue">Fatigue</option>
+                </select>
+                <input type="text" id="searchText" name="searchText" placeholder="Or type any condition..." />
+                <button>Search</button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 GreanHeal Africa. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p>Contact: support@GreanHealAfrica.com</p>
+    </footer>
+
+    <!-- Script Tag -->
+    <script src="script.js"></script>
+</body>
+</html>

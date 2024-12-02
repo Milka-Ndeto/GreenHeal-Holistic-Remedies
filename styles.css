@@ -1,0 +1,697 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    display: none;
+    padding: 20px;
+}
+
+main section.active {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+#home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fbfcfb;
+    z-index: 2;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+/* Diet Section Styling */
+.diet-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.diet-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.diet-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.diet-tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.diet-tip {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px; /* Ensures cards have consistent height */
+}
+
+.diet-tip:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.diet-tip img {
+    width: 100%;
+    height: auto; /* Remove object-fit to prevent cropping */
+    max-height: 200px; /* Limit the height for consistent image size */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-position: center; /* Ensures the image stays centered */
+}
+
+.diet-tip h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.diet-tip p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    flex-grow: 1; /* Ensures text content expands to fill available space */
+    margin-bottom: 15px; /* Provides space between text and bottom */
+}
+
+@media (max-width: 768px) {
+    .diet-section h2 {
+        font-size: 2rem;
+    }
+
+    .diet-section p {
+        font-size: 1rem;
+    }
+
+    .diet-tip {
+        width: 90%;
+        min-height: 300px; /* Adjust card size for mobile */
+    }
+
+    .diet-tip h3 {
+        font-size: 1.3rem;
+    }
+
+    .diet-tip p {
+        font-size: 0.95rem;
+    }
+}
+/* Natural Remedies Section Styling */
+#natural-remedies {
+    padding: 50px 20px;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+#natural-remedies h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#natural-remedies p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.remedies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.remedy-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px;
+}
+
+.remedy-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.remedy-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Limit the height for consistent image size */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-position: center;
+}
+
+.remedy-card h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.remedy-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    #natural-remedies h2 {
+        font-size: 2rem;
+    }
+
+    #natural-remedies p {
+        font-size: 1rem;
+    }
+
+    .remedy-card {
+        width: 90%;
+        min-height: 300px;
+    }
+
+    .remedy-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .remedy-card p {
+        font-size: 0.95rem;
+    }
+}
+/* First Aid Section Styling */
+#first-aid {
+    padding: 50px 20px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+#first-aid h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#first-aid p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.first-aid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.first-aid-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px;
+}
+
+.first-aid-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.first-aid-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Limit the height for consistent image size */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-position: center;
+}
+
+.first-aid-card h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.first-aid-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    #first-aid h2 {
+        font-size: 2rem;
+    }
+
+    #first-aid p {
+        font-size: 1rem;
+    }
+
+    .first-aid-card {
+        width: 90%;
+        min-height: 300px;
+    }
+
+    .first-aid-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .first-aid-card p {
+        font-size: 0.95rem;
+    }
+}
+/* Home Care Section Styling */
+#home-care {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#home-care h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#home-care p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.home-care-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-care-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px;
+}
+
+.home-care-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.home-care-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Limit the height for consistent image size */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-position: center;
+}
+
+.home-care-card h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.home-care-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    #home-care h2 {
+        font-size: 2rem;
+    }
+
+    #home-care p {
+        font-size: 1rem;
+    }
+
+    .home-care-card {
+        width: 90%;
+        min-height: 300px;
+    }
+
+    .home-care-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .home-care-card p {
+        font-size: 0.95rem;
+    }
+}
+/* Contact Us Section */
+#contact-us {
+    padding: 50px 20px;
+    background-color: hwb(97 52% 38%);
+    text-align: center;
+}
+
+#contact-us h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact-us p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.contact-info p {
+    color: #333;
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact-us h2 {
+        font-size: 2rem;
+    }
+
+    #contact-us p {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Ensure that the body or main section allows scrolling */
+body, main {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto; /* Allows vertical scrolling */
+}
+/* General Styling */
+#home {
+    position: relative;
+    color: #fff;
+}
+
+/* Hero Text */
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 10;
+    color: white;
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+/* About Us Section */
+.about-us {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.about-us h3 {
+    font-size: 28px;
+}
+
+/* Health Specialist Section */
+.health-specialist {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.health-specialist button {
+    padding: 10px 20px;
+    background-color: #FF6347;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.health-specialist button:hover {
+    background-color: #e5533d;
+}
+
+/* Common Home Treatments Section */
+.home-treatments {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.home-treatments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.home-treatments li {
+    margin-bottom: 15px;
+}
+/* Hero Text */
+.hero-text {
+    position: absolute;
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts position to fully center */
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+#home {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#home-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    z-index: -1; /* Moves the image behind the text */
+}
+
+.hero-text {
+    z-index: 1; /* Places the text above the background image */
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+}

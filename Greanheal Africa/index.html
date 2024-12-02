@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreanHeal Africa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="GreanHeal Africa">
+            <img src="Modern Hospital Center Logo.png" alt="GreanHeal Africa" class="logo">
+            <h1>GreanHeal Africa</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="natural-remedies.html">Natural Remedies</a></li>
+            <li><a href="first-aid.html">First Aid</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+    </nav>
+
+    <!-- Main Content Area with Sidebar -->
+    <div class="container">
+        <!-- Main Content -->
+        <section class="main-content">
+            <article>
+                <h2>Welcome to GreanHeal Africa</h2>
+                <p>Your Natural Treatment Hub for Healing and Wellness.</p>
+
+                <!-- Button to Toggle Form -->
+                <button id="toggleFormButton" onclick="toggleForm()">Open Patient Data Form</button>
+
+                <!-- Patient Data Form (Initially Hidden) -->
+                <div id="patientForm" class="hidden">
+                    <form id="patientDataForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="number" id="phone" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                     <!-- Success Message -->
+    <div id="successMessage" style="display:none;">
+        <p>Submitted!</p>
+    </div>
+    </div>
+    
+               
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <ul class="sidebar-links">
+                <li><a href="#">HealthyLiving Resources</a></li>
+                <li><a href="#">Healthcare Providers</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 GreanHeal Africa. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p>Contact: support@GreanHeal Africa.com</p>
+    </footer>
+
+    <!--  Script Tag -->
+    <script src="script.js"></script>
+</body>
+</html>
